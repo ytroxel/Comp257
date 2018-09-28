@@ -1,0 +1,52 @@
+/*Yada Troxel
+assignment 3 
+3.17-18,3.20-21,3.23-24,3.30-32,3.38*/
+import java.util.Scanner;
+//3.17
+public class Homework {
+	public static void main(String [] args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("Enter the miles per gallon rating of your car: ");
+		System.out.print("#\r");
+		int rate = input.nextInt();
+		System.out.println("How many trips would you like to record?");
+		System.out.print("#\r");
+		int trip = input.nextInt();
+		int count = 0;
+		double tMile = 0;
+		double tGal = 0;
+		double gal = tMile;
+
+		while (count < trip){
+		//asking for gallon and miles
+		System.out.println("Enter the total miles traveled:");
+		System.out.print("#\r");
+		double mile = input.nextInt();
+		tMile = tMile + mile;
+		count++;
+
+		 }
+
+		 gal = tMile / rate;
+
+		 tGal = tMile * rate;
+		/*System.out.println("Enter your gallons traveled");
+		System.out.print("##\r");
+		int gal = input.nextInt();
+		tGal = tGal + gal;
+		count++;
+		}*/
+
+		//calculate gallons per miles
+		double gpm;
+		gpm = tMile / rate;
+		//final display
+
+		System.out.printf("GPM: %f Gallons per mile\n",gpm );
+		System.out.printf("Total miles traveled: %f\n", tMile );
+		System.out.printf("Total gallons used: %f\n", tGal );
+	}
+}
+
+
