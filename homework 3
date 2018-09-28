@@ -50,3 +50,71 @@ public class Homework {
 }
 
 
+/*Yada Troxel
+assignment 3 
+3.17-18,3.20-21,3.23-24,3.30-32,3.38*/
+import java.util.Scanner;
+//3.18
+public class Homework {
+	public static void main(String [] args) {
+		Scanner input = new Scanner (System.in);
+		
+	
+		System.out.println("Enter number of accounts to evaluate: ");
+		System.out.print("#\r");
+		int accAll = input.nextInt();
+		int num = 1;
+		int count = 0;
+		int tCharge = 0;
+		int tCredit = 0;
+
+		while (count < accAll){
+
+		int count2 = 0;
+		System.out.printf("Enter Account#%d number:\n", num);
+		System.out.print("#\r");
+		int accNum = input.nextInt();
+
+		System.out.println("Enter credit limit:");
+		System.out.print("$ ");
+		int creditLimit = input.nextInt();
+
+		System.out.println("Enter balance at the beginning of the month:");
+		System.out.print("$ ");
+		int bal = input.nextInt();
+
+		System.out.println("Enter total Items charged:");
+		System.out.print("#\r");
+		int itemAll = input.nextInt();
+		int num2 = 1;
+			
+			while (count2 < itemAll) {
+			System.out.printf("Enter amount of Item#%d: \n", num2);
+			System.out.print("$ ");
+			int itemAmount = input.nextInt();
+			tCharge = tCharge + itemAmount;
+			System.out.printf("Enter credits applied to Item#%d charged:\n", num2);
+			System.out.print("$ ");
+			int credit = input.nextInt();
+			tCredit = tCredit + credit;
+			count2++;
+			num2++;
+			}
+		
+		System.out.printf("Account Number: %d\n", accNum);
+		System.out.printf("Beginning Balance: $%d\n", bal);
+		System.out.printf("Total Items: %d\n", itemAll);
+		System.out.printf("Total Charges: $%d\n", tCharge);
+		System.out.printf("Total Credits Applied: $%d\n", tCredit);
+			if ( tCredit > creditLimit) {
+				System.out.println("YOU'VE EXCEEDED YOUR CREDIT LIMIT!!!!\n");
+			}
+			else {
+				System.out.printf("%d IS WITHIN YOUR CREDIT LIMIT\n", tCredit);
+			}
+		count++;
+		num++;
+		 }
+	}
+}
+
