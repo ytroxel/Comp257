@@ -118,3 +118,48 @@ public class Homework {
 	}
 }
 
+/*Yada Troxel
+assignment 3 
+3.17-18,3.20-21,3.23-24,3.30-32,3.38*/
+import java.util.Scanner;
+//3.20
+public class Homework {
+	public static void main(String [] args) {
+		Scanner input = new Scanner (System.in);
+		
+	
+		int numberOfEmployees = 3;
+		int count = 0;
+		double grossIncome = 0;
+		int employeeNumber = 1;
+		while (count < numberOfEmployees){
+
+
+		System.out.printf("Employee %d\n Enter number of hours worked last week: \n",employeeNumber);
+		System.out.print("#\r");
+		int hoursWorked = input.nextInt();
+
+		System.out.printf("Employee %d, Enter hourly wage:\n", employeeNumber);
+		System.out.print("$ ");
+		int hourlyWage = input.nextInt();
+
+		if ( hoursWorked < 40 ){
+			grossIncome = hoursWorked * hourlyWage;
+		}
+		else {
+			grossIncome = hoursWorked * 1.5 * hourlyWage;
+		}
+
+		++employeeNumber;
+		++count;
+		
+		System.out.printf("EMPLOYEE %d\n", employeeNumber);
+		System.out.printf("HOURS WORKED:\n %d\n", hoursWorked);
+		System.out.printf("HOURLY WAGE:\n %d\n", hourlyWage);
+		System.out.printf("GROSS INCOME:\n $%f\n", grossIncome);
+			
+		 }
+	}
+}
+
+
