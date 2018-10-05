@@ -162,4 +162,27 @@ public class Homework {
 	}
 }
 
+/*Yada Troxel
+assignment 3 
+3.17-18,3.20-21,3.23-24,3.30-32,3.38*/
+import java.util.Scanner;
+//3.21
+public class Homework {
+	public static void main(String [] args) {
+		Scanner input = new Scanner (System.in);
+		
+		int largest = 0;
+		int counter = 0;
+		while ( counter < 10){
+			System.out.print("Enter number: \n");
+			int number = input.nextInt();
+			if (number > largest){
+				largest = number;
+			}
+			++counter;
+		}
+		System.out.printf("Largest number is: %d\n", largest);
+	 }
+
+  }
 
