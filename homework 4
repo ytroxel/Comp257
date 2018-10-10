@@ -1,0 +1,72 @@
+4.17) alternative
+
+/* 
+Yada Troxel
+4.17,4.21,4.23,4.29
+
+4.17)
+*/
+
+import java.util.Scanner;
+
+public class Homework {
+	public static void main(String [] args) {
+	Scanner input = new Scanner(System.in);
+
+	System.out.print("how many products to enter: \n");
+	int quantity = input.nextInt();
+	//System.out.printf("Enter ");
+	int count = 1;
+	double totalAmount = 0;
+	double product1 = 2.98;
+	double product2 = 4.50;
+	double product3 = 9.98;
+	double product4 = 4.49;
+	double product5 = 6.87;
+
+	//count = input.nextInt();
+	String increment  = "";
+	while (quantity > 0){
+
+
+		switch(quantity){
+			case 1: increment = "st";
+			break;
+
+			case 2: increment = "nd";
+			break;
+
+			case 3: increment = "rd";
+			break;
+
+			default: increment = "th";
+		}
+		
+		System.out.printf("Enter %d%s Product Number:  ",count,increment);
+		int productNumber = input.nextInt();
+		
+		switch(productNumber){
+			case 1: totalAmount = totalAmount + product1;
+		}
+
+
+
+
+
+
+
+		--quantity;
+		++count;
+	}//if
+	
+
+
+	}//main
+
+
+}//class
+  
+
+
+
+4.17) actual
