@@ -70,3 +70,123 @@ public class Homework {
 
 
 4.17) actual
+
+/* 
+Yada Troxel
+4.17,4.21,4.23,4.29
+
+4.17)
+*/
+
+import java.util.Scanner;
+
+public class Homework {
+	public static void main(String [] args) {
+	Scanner input = new Scanner(System.in);
+
+	int chose = 0;
+	double assign = 0;
+	int quantity = 0;
+	String quiting = "";
+	double totalAmount = 0;
+	double product1 = 2.98;
+	double product2 = 4.50;
+	double product3 = 9.98;
+	double product4 = 4.49;
+	double product5 = 6.87;
+
+	boolean decision = true;
+
+	while(decision){
+
+		System.out.print("   PRODUCT LIST   \n"+
+			"PRODUCT 1: $2.98\nPRODUCT 2: $4.50\nPRODUCT 3: $9.98\n"+
+			"PRODUCT 4: $4.49\nPRODUCT 5: $6.87\n");
+
+		System.out.print("Enter Product Number: ");
+		chose = input.nextInt();
+
+		switch(chose){
+
+			case 1: assign = product1;
+			break;
+
+			case 2: assign = product2;
+			break;
+
+			case 3: assign = product3;
+			break;
+
+			case 4: assign = product4;
+			break;
+
+			case 5: assign = product5;
+			break;
+		}//switch
+
+
+
+		System.out.print("Enter Quantity up to 10: ");
+		quantity = input.nextInt();
+
+		switch(quantity){
+
+			case 1: totalAmount = assign * 1;
+			break;
+
+			case 2: totalAmount = assign * 2;
+			break;
+
+			case 3: totalAmount = assign * 3;
+			break;
+
+			case 4: totalAmount = assign * 4;
+			break;
+
+			case 5: totalAmount = assign * 5;
+			break;
+
+			case 6: totalAmount = assign * 6;
+			break;
+
+			case 7: totalAmount = assign * 7;
+			break;
+
+			case 8: totalAmount = assign * 8;
+			break;
+
+			case 9: totalAmount = assign * 9;
+			break;
+
+			case 10: totalAmount = assign * 10;
+			break;
+
+			default: System.out.print("NOT ENOUGH STOCK!");
+		}//switch
+
+		System.out.printf("Total Amount: $%f\n", totalAmount);
+
+		quiting = input.nextLine();
+
+		System.out.print("Press Q to Quit: ");
+		quiting = input.nextLine();
+		if(quiting.equals("q")){
+			decision = false;
+		}//if
+	}//while
+
+	
+
+
+
+	
+
+
+	}//main
+
+
+}//class
+  
+
+
+
